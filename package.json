@@ -1,0 +1,33 @@
+{
+  "name": "sm2-esm",
+  "version": "1.0.1",
+  "description": "JS实现国密算法SM2加密",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:es": "node ./build.es.js",
+    "build:cjs": "node ./build.cjs.js",
+    "build": "node ./build.es.js && node ./build.cjs.js"
+  },
+  "files": [
+    "lib",
+    "es"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stevex2012/sm2-npm.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stevex2012/sm2-npm/issues"
+  },
+  "homepage": "https://github.com/stevex2012/sm2-npm#readme",
+  "dependencies": {
+    "crypto-js": "^4.0.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.12.15"
+  }
+}
